@@ -1,0 +1,293 @@
+{
+  "main": {
+    "id": "43f9ce3c3dc10b8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c283dac7a644683a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae5c201a8be5eb66",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "top_level_mindmap.canvas",
+                "viewState": {
+                  "x": 56.045128462037525,
+                  "y": -26.957302213899993,
+                  "zoom": -0.6666666666666667
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "941076d68f2c7e4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0c1a488afadbe54",
+        "type": "tabs",
+        "dimension": 34.952380952380956,
+        "children": [
+          {
+            "id": "8edacdf8c554d25f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a3d9011e5f98afe7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb71000048d469f6",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "3f949935ac6234e3",
+        "type": "tabs",
+        "dimension": 65.04761904761905,
+        "children": [
+          {
+            "id": "349190d1d4557a61",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ed1afadb903e0e03",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.51103591918945
+  },
+  "right": {
+    "id": "e1f0d18a9b16f3a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "445da47fa2027b35",
+        "type": "tabs",
+        "dimension": 16.077170418006432,
+        "children": [
+          {
+            "id": "0ea8270667a236d5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "top_level_mindmap.canvas"
+              }
+            }
+          },
+          {
+            "id": "252f52d4f71e8934",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "e582eea3fd850f61",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b2366c5f22fd393c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "top_level_mindmap.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "95b6087e60f8d04c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "top_level_mindmap.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d119a07d55c48eb5",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "123c92aa374a3b9a",
+        "type": "tabs",
+        "dimension": 51.848874598070736,
+        "children": [
+          {
+            "id": "c0539c2690f1a2eb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "bcead9a5a9dae284",
+        "type": "tabs",
+        "dimension": 32.07395498392283,
+        "children": [
+          {
+            "id": "0e304afb8235c993",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 495.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "cmdr:QuickAdd: Add to Project Scratchpad": false,
+      "cmdr:QuickAdd: Create New Project": false,
+      "cmdr:QuickAdd: Add to Project Kanban": false,
+      "cmdr:Linter: Lint the current file": false,
+      "cmdr:QuickAdd: Capture Thought": false,
+      "cmdr:Luhman: Insert Zettel Link": false,
+      "cmdr:QuickAdd: Move Zettel to Private": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-gallery:Gallery": false,
+      "obsidian-map-view:Open map view": false,
+      "open-vscode:VSCode": false,
+      "periodic-notes:Open today": false,
+      "obsidian-day-planner:Timeline": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "ae5c201a8be5eb66",
+  "lastOpenFiles": [
+    "top_level_mindmap.canvas",
+    "K8S - Core Concepts.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage/Storage.md",
+    "_PARA/Projects/jikhk/jikhk.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_Helm_Course/Helm_Fundamentals.md",
+    "Calendar/Daily/2023-08-28.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_Helm_Course",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Cluster_Build_Notes/Cluster_Build_Notes.md",
+    "_PARA/Domain-Technology/Pillar-Azure/Azure_Resource_Knowledgebase/Azure_Container_Registry.md",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ModuleManagement",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/Git",
+    "Domain Canvas.canvas",
+    "_PARA/Domain-Technology/Pillar-Azure/Azure_Resource_Knowledgebase",
+    "Excalidraw/Drawing 2023-08-12 13.06.09.excalidraw.md",
+    "Excalidraw",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Ingress.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/DNS_Core_DNS.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Cluster_and_Pod_Networking_CNI.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Concept_Review_Linux_Networking.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/_Kubernetes_Commands_QuickRef.md",
+    "K8S - Scheduling.md",
+    "Languages_GO_Books_MasteringGO_Chapter2.md",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/Azure/Service_Principals.md",
+    "Calendar/Daily/2023-08-05.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Security_Contexts/Service_Accounts.md",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ADO/ADO_Module.md",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/Azure",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ADO",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/Terraform/Terrafom_Concept_Review.md",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell",
+    "_PARA/Domain-Technology/Pillar-Programming/Areas/Terraform",
+    "System/Attachments/Pasted image 20230804201643.png",
+    "System/Attachments/Pasted image 20230804201347.png",
+    "System/Attachments/Pasted image 20230804200738.png",
+    "System/Attachments/Pasted image 20230804200536.png",
+    "System/Attachments/Pasted image 20230804200328.png",
+    "System/Attachments/Pasted image 20230804175601.png",
+    "System/Attachments/Pasted image 20230804175024.png",
+    "System/Attachments/Pasted image 20230804174741.png",
+    "System/Attachments/Pasted image 20230804174203.png",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage",
+    "Inbox/Computer Capture/2023-08-03-22-56-31.md",
+    "Inbox/Computer Capture/2023-08-03-22-56-12.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Taints_And_Tolerations.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Multiple_Schedulers.md",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Labels_and_Selectors.md",
+    "System/Attachments/Pasted image 20230802184046.png",
+    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
+    "_PARA/Projects/Test Project 2/Canvas.canvas"
+  ]
+}

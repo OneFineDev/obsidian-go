@@ -1,0 +1,12 @@
+{
+  "obsidian-auto-link-title:enhance-url-with-title": [],
+  "obsidian-text-format:text-format-remove-blank-line": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ]
+}
