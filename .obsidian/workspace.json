@@ -21,8 +21,19 @@
                 }
               }
             }
+          },
+          {
+            "id": "77eca1a0086fd41e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,12 +243,12 @@
       "obsidian-gallery:Gallery": false,
       "obsidian-map-view:Open map view": false,
       "open-vscode:VSCode": false,
-      "periodic-notes:Open today": false,
       "obsidian-day-planner:Timeline": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "ae5c201a8be5eb66",
+  "active": "77eca1a0086fd41e",
   "lastOpenFiles": [
     "top_level_mindmap.canvas",
     "K8S - Core Concepts.md",
