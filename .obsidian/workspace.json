@@ -21,19 +21,8 @@
                 }
               }
             }
-          },
-          {
-            "id": "77eca1a0086fd41e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -248,7 +237,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "77eca1a0086fd41e",
+  "active": "c0539c2690f1a2eb",
   "lastOpenFiles": [
     "top_level_mindmap.canvas",
     "K8S - Core Concepts.md",
