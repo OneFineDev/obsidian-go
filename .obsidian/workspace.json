@@ -11,14 +11,11 @@
             "id": "ae5c201a8be5eb66",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "top_level_mindmap.canvas",
-                "viewState": {
-                  "x": 56.045128462037525,
-                  "y": -26.957302213899993,
-                  "zoom": -0.6666666666666667
-                }
+                "file": "projectTypes/API.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -117,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "top_level_mindmap.canvas"
+                "file": "projectTypes/API.md"
               }
             }
           },
@@ -143,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "top_level_mindmap.canvas",
+                "file": "projectTypes/API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "top_level_mindmap.canvas",
+                "file": "projectTypes/API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,9 +234,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c0539c2690f1a2eb",
+  "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
     "top_level_mindmap.canvas",
+    "projectTypes/API.md",
+    "projectTypes",
+    "languageFeatures",
+    "algorithms",
+    "patterns",
     "K8S - Core Concepts.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage/Storage.md",
     "_PARA/Projects/jikhk/jikhk.md",
@@ -267,10 +269,7 @@
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Security_Contexts/Service_Accounts.md",
     "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ADO/ADO_Module.md",
     "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/Azure",
-    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ADO",
     "_PARA/Domain-Technology/Pillar-Programming/Areas/Terraform/Terrafom_Concept_Review.md",
-    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell",
-    "_PARA/Domain-Technology/Pillar-Programming/Areas/Terraform",
     "System/Attachments/Pasted image 20230804201643.png",
     "System/Attachments/Pasted image 20230804201347.png",
     "System/Attachments/Pasted image 20230804200738.png",
@@ -280,12 +279,10 @@
     "System/Attachments/Pasted image 20230804175024.png",
     "System/Attachments/Pasted image 20230804174741.png",
     "System/Attachments/Pasted image 20230804174203.png",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage",
     "Inbox/Computer Capture/2023-08-03-22-56-31.md",
     "Inbox/Computer Capture/2023-08-03-22-56-12.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Taints_And_Tolerations.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Multiple_Schedulers.md",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Labels_and_Selectors.md",
     "System/Attachments/Pasted image 20230802184046.png",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
     "_PARA/Projects/Test Project 2/Canvas.canvas"
