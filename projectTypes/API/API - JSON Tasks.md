@@ -77,4 +77,14 @@ In contrast the `omitempty` directive hides a field in the JSON output _if an
 - Equal to `false`, `0`, or `""`
 - An empty `array`, `slice` or `map`
 - A `nil` pointer or a `nil` interface value
-## The string struct tag directive
+## Enveloping responses
+``` go
+
+type envelope map[string]any
+
+err = app.writeJSON(w, http.StatusOK, envelope{"movie": m}, nil)
+
+```
+
+## JSON Customization
+
