@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/API.md",
+                "file": "projectTypes/API/API - tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/API.md"
+                "file": "projectTypes/API/API - tasks.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/API.md",
+                "file": "projectTypes/API/API - tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/API.md",
+                "file": "projectTypes/API/API - tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,8 +236,10 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
+    "projectTypes/API/API - Application Structure.md",
+    "projectTypes/API/API - tasks.md",
+    "projectTypes/API",
     "top_level_mindmap.canvas",
-    "projectTypes/API.md",
     "projectTypes",
     "languageFeatures",
     "algorithms",
@@ -268,7 +270,6 @@
     "Calendar/Daily/2023-08-05.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Security_Contexts/Service_Accounts.md",
     "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ADO/ADO_Module.md",
-    "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/Azure",
     "_PARA/Domain-Technology/Pillar-Programming/Areas/Terraform/Terrafom_Concept_Review.md",
     "System/Attachments/Pasted image 20230804201643.png",
     "System/Attachments/Pasted image 20230804201347.png",

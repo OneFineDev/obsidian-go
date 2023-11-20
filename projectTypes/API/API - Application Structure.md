@@ -137,7 +137,7 @@ func main() {
 }
 ```
 
-## Making the healthcheck handler a method on the application struct
+## Making the healthcheck handler (and other  handlers) a method on the application struct
 
 `healthcheckHandler` is implemented as a method on our application struct.
 This is an effective and idiomatic way to make dependencies available to our handlers without resorting to global variables or closures — any dependency that the `healthcheckHandler` needs can simply be included as a field in the application struct when we initialize it in `main()`.

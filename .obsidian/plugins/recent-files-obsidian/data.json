@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "API",
-      "path": "projectTypes/API.md"
+      "basename": "API - tasks",
+      "path": "projectTypes/API/API - tasks.md"
+    },
+    {
+      "basename": "API - Application Structure",
+      "path": "projectTypes/API/API - Application Structure.md"
     },
     {
       "basename": "top_level_mindmap",
