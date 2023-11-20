@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/API/API - tasks.md",
+                "file": "projectTypes/API/API - Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/API/API - tasks.md"
+                "file": "projectTypes/API/API - Tasks.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/API/API - tasks.md",
+                "file": "projectTypes/API/API - Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/API/API - tasks.md",
+                "file": "projectTypes/API/API - Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,7 +237,7 @@
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
     "projectTypes/API/API - Application Structure.md",
-    "projectTypes/API/API - tasks.md",
+    "projectTypes/API/API - Tasks.md",
     "projectTypes/API",
     "top_level_mindmap.canvas",
     "projectTypes",

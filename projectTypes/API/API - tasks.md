@@ -68,3 +68,13 @@
 Two methods to do this:
 `json.Marshal`
 `json.NewEncoder(w writer).Encode(data any)` - this is simpler but denies the opportunity to set headers as the result is immediately written to `w`.
+
+## Hiding struct fields in the JSON object
+The `-` (hyphen) directive can be used when you _never_ want a particular struct field to appear in the JSON output. This is useful for fields that contain internal system information that isn’t relevant to your users, or sensitive information that you don’t want to expose (like the hash of a password).
+
+In contrast the `omitempty` directive hides a field in the JSON output _if and only if_ the struct field value is empty, where empty is defined as being:
+
+- Equal to `false`, `0`, or `""`
+- An empty `array`, `slice` or `map`
+- A `nil` pointer or a `nil` interface value
+## The string struct tag directive
