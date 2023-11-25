@@ -86,5 +86,10 @@ err = app.writeJSON(w, http.StatusOK, envelope{"movie": m}, nil)
 
 ```
 
-## JSON Customization
+## JSON Customization - A type with a method to do custom JSO transformations
 
+A clean and simple approach is to create a custom type specifically for the `Runtime` field, and implement a `MarshalJSON()` method on this custom type.
+
+If your `MarshalJSON()` method returns a JSON string value, like ours does, then you must wrap the string in double quotes before returning it. Otherwise it won’t be interpreted as a _JSON string_ and you’ll receive a runtime
+
+Deliberately using a _value receiver_ for our `MarshalJSON()` method rather than a _pointer receiver_ like `func (r *Runtime) MarshalJSON()`. This gives us more flexibility because it means that our custom JSON encoding will work on _both_ `Runtime` values and pointers to `Runtime` values.

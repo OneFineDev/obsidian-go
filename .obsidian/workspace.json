@@ -97,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.51103591918945
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e1f0d18a9b16f3a2",
@@ -206,7 +207,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 495.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,7 +236,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "349190d1d4557a61",
+  "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
     "projectTypes/API/API - Application Structure.md",
     "projectTypes/API/API - JSON Tasks.md",
