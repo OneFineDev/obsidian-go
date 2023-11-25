@@ -114,3 +114,96 @@ Can wrap router in panic recovery middleware
  there are two approaches that you can take to _decode_ JSON into a nativeGo object: using a [`json.Decoder`](https://golang.org/pkg/encoding/json/#Decoder) type or using the [`json.Unmarshal()`](https://golang.org/pkg/encoding/json/#Unmarshal) function.
  using `json.Decoder` is generally the best choice. It’s more efficient than `json.Unmarshal()`, requires less code, and offers some helpful settings that you can use to tweak its behavior.
 
+## Zero Values
+As you might have guessed, when we do this the `Year` field in our `input` struct is left with its zero value (which happens to be `0` because the `Year` field is an `int32` type).
+
+This leads to an interesting question: how can you tell the difference between a client _not providing a key/value pair_, and _providing a key/value pair but deliberately setting it to its zero value_? Like this:
+```go
+$ BODY='{"title":"Moana","year":0,"runtime":107, "genres":["animation","adventure"]}'
+$ curl -d "$BODY" localhost:4000/v1/movies
+{Title:Moana Year:0 Runtime:107 Genres:[animation adventure]}
+```
+
+## JSON decoding type transformation
+<table>
+<thead>
+<tr>
+<th>JSON type</th>
+<th>⇒</th>
+<th>Supported Go types</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>JSON boolean</td>
+<td>⇒</td>
+<td><code>bool</code></td>
+</tr>
+
+<tr>
+<td>JSON string</td>
+<td>⇒</td>
+<td><code>string</code></td>
+</tr>
+
+<tr>
+<td>JSON number</td>
+<td>⇒</td>
+<td><code>int*</code>, <code>uint*</code>, <code>float*</code>, <code>rune</code></td>
+</tr>
+
+<tr>
+<td>JSON array</td>
+<td>⇒</td>
+<td><code>array</code>, <code>slice</code></td>
+</tr>
+
+<tr>
+<td>JSON object</td>
+<td>⇒</td>
+<td><code>struct</code>, <code>map</code></td>
+</tr>
+</tbody>
+</table>
+
+## JSON Unmarshal
+Basically more verbose and less performant
+
+## Managing bad requests
+Triaging the `Decode()` error
+
+<table>
+<thead>
+<tr>
+<th>Error types</th>
+<th>Reason</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://golang.org/pkg/encoding/json/#SyntaxError"><code>json.SyntaxError</code></a> <br><a href="https://golang.org/pkg/io/#pkg-variables"><code>io.ErrUnexpectedEOF</code></a></td>
+<td>There is a syntax problem with the JSON being decoded.</td>
+</tr>
+
+<tr>
+<td><a href="https://golang.org/pkg/encoding/json/#UnmarshalTypeError"><code>json.UnmarshalTypeError</code></a></td>
+<td>A JSON value is not appropriate for the destination Go type.</td>
+</tr>
+
+<tr>
+<td><a href="https://golang.org/pkg/encoding/json/#InvalidUnmarshalError"><code>json.InvalidUnmarshalError</code></a></td>
+<td>The decode destination is not valid (usually because it is not a pointer). This is actually a problem with our application code, not the JSON itself.</td>
+</tr>
+
+<tr>
+<td><a href="https://golang.org/pkg/io/#pkg-variables"><code>io.EOF</code></a></td>
+<td>The JSON being decoded is empty.</td>
+</tr>
+</tbody>
+</table>
+
+Triaging these potential errors (which we can do using Go’s [`errors.Is()`](https://golang.org/pkg/errors/#Is) and [`errors.As()`](https://golang.org/pkg/errors/#As) functions) is going to make the code in our `createMovieHandler` _a lot_ longer and more complicated. And the logic is something that we’ll need to duplicate in other handlers throughout this project too.
+
+So, to assist with this, let’s create a new `readJSON()` helper in the `cmd/api/helpers.go` file. In this helper we’ll decode the JSON from the request body as normal, then triage the errors and replace them with our own custom messages as necessary.
