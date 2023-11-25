@@ -93,3 +93,15 @@ A clean and simple approach is to create a custom type specifically for the `Ru
 If your `MarshalJSON()` method returns a JSON string value, like ours does, then you must wrap the string in double quotes before returning it. Otherwise it won’t be interpreted as a _JSON string_ and you’ll receive a runtime
 
 Deliberately using a _value receiver_ for our `MarshalJSON()` method rather than a _pointer receiver_ like `func (r *Runtime) MarshalJSON()`. This gives us more flexibility because it means that our custom JSON encoding will work on _both_ `Runtime` values and pointers to `Runtime` values.
+
+## JSON Error Responses
+Replace `http.Error()` and `http.NotFound()` with custom JSON error logger functions
+
+## Custom router error handlers
+httprouter allows us to set our own custom error handlers when we initialize the router
+
+``` gO
+router.NotFound = http.HandlerFunc(app.notFoundResponse)
+```
+
+## Panic Recovery
