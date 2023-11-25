@@ -207,3 +207,18 @@ Triaging the `Decode()` error
 Triaging these potential errors (which we can do using Go’s [`errors.Is()`](https://golang.org/pkg/errors/#Is) and [`errors.As()`](https://golang.org/pkg/errors/#As) functions) is going to make the code in our `createMovieHandler` _a lot_ longer and more complicated. And the logic is something that we’ll need to duplicate in other handlers throughout this project too.
 
 So, to assist with this, let’s create a new `readJSON()` helper in the `cmd/api/helpers.go` file. In this helper we’ll decode the JSON from the request body as normal, then triage the errors and replace them with our own custom messages as necessary.
+
+## Restricting Input
+	Note: The code is not particularly pretty, but it's uselful and can be copy pasta'ed into other projects.
+
+Go’s `json.Decoder` provides a [`DisallowUnknownFields()`](https://golang.org/pkg/encoding/json/#Decoder.DisallowUnknownFields) setting that we can use to generate an error when this happens
+
+Another problem we have is the fact that `json.Decoder` is designed to support _streams_ of JSON data. When we call `Decode()` on our request body, it actually reads the _first JSON value only_ from the body and decodes it. If we made a second call to `Decode()`, it would read and decode the second value and so on.
+
+But because we call `Decode()` once — and only once — in our `readJSON()` helper, anything after the first JSON value in the request body is ignored. This means you could send a request body containing multiple JSON values, or garbage content after the first JSON value, and our API handlers would not raise an error.
+
+To ensure that there are no additional JSON values (or any other content) in the request body, we will need to call `Decode()` a second time in our `readJSON()` helper and check that it returns an `io.EOF` (end of file) error.
+
+Finally, there’s currently no upper-limit on the maximum size of the request body that we accept. This means that our `createMovieHandler` would be a good target for any malicious clients that wish to perform a denial-of-service attack on our API. We can address this by using the [`http.MaxBytesReader()`](https://golang.org/pkg/net/http/#MaxBytesReader) function to limit the maximum size of the request body.
+
+## Custom JSON Decoding
