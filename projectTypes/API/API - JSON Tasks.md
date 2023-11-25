@@ -222,3 +222,23 @@ To ensure that there are no additional JSON values (or any other content) in the
 Finally, there’s currently no upper-limit on the maximum size of the request body that we accept. This means that our `createMovieHandler` would be a good target for any malicious clients that wish to perform a denial-of-service attack on our API. We can address this by using the [`http.MaxBytesReader()`](https://golang.org/pkg/net/http/#MaxBytesReader) function to limit the maximum size of the request body.
 
 ## Custom JSON Decoding
+The key thing here is knowing about Go’s [`json.Unmarshaler`](https://golang.org/pkg/encoding/json/#Unmarshaler) interface, which looks like this:
+
+``` go 
+
+type Unmarshaler interface {
+    UnmarshalJSON([]byte) error
+}
+```
+
+When Go is decoding some JSON, it will check to see if the destination type satisfies the `json.Unmarshaler` interface. If it _does_ satisfy the interface, then Go will call it’s `UnmarshalJSON()` method to determine how to decode the provided JSON into the target type. This is basically the reverse of the `json.Marshaler` interface that we used earlier to customize our JSON encoding behavior.
+
+## Validating JSON input
+check that:
+
+- The movie title provided by the client is not empty and is not more than 500 bytes long.
+- The movie year is not empty and is between 1888 and the current year.
+- The movie runtime is not empty and is a positive integer.
+- The movie has between one and five (unique) genres.
+
+If any of those checks fail, we want to send the client a `422 Unprocessable Entity` response along with error messages which clearly describe the validation failures.
