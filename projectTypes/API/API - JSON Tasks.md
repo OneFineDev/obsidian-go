@@ -242,3 +242,12 @@ check that:
 - The movie has between one and five (unique) genres.
 
 If any of those checks fail, we want to send the client a `422 Unprocessable Entity` response along with error messages which clearly describe the validation failures.
+
+---
+Firstly, you might be wondering why we’re initializing the `Validator` instance in our handler and passing it to the `ValidateMovie()` function — rather than initializing it in `ValidateMovie()` and passing it back as a return value.
+
+This is because as our application gets more complex we will need call _multiple_ validation helpers from our handlers, rather than just one like we are above. So initializing the `Validator` in the handler, and then passing it around, gives us more flexibility.
+
+You might also be wondering why we’re decoding the JSON request into the `input` struct and then copying the data across, rather than just decoding into the `Movie` struct directly.
+
+The problem with decoding directly into a `Movie` struct is that a client could provide the keys `id` and `version` in their JSON request, and the corresponding values would be decoded _without any error_ into the `ID` and `Version` fields of the `Movie` struct — even though we don’t want them to be. We _could_ check the necessary fields in the `Movie` struct after the event to make sure that they are empty, but that feels a bit hacky, and decoding into an intermediary struct (like we are in our handler) is a cleaner, simpler, and more robust approach — albeit a little bit verbose.
