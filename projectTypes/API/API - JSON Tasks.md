@@ -1,3 +1,4 @@
+# JSON Responses
 ## JSON encoding
 <table>
 <thead>
@@ -105,3 +106,11 @@ router.NotFound = http.HandlerFunc(app.notFoundResponse)
 ```
 
 ## Panic Recovery
+Can wrap router in panic recovery middleware
+
+# JSON Requests
+
+## JSON Decoding 
+ there are two approaches that you can take to _decode_ JSON into a nativeGo object: using a [`json.Decoder`](https://golang.org/pkg/encoding/json/#Decoder) type or using the [`json.Unmarshal()`](https://golang.org/pkg/encoding/json/#Unmarshal) function.
+ using `json.Decoder` is generally the best choice. It’s more efficient than `json.Unmarshal()`, requires less code, and offers some helpful settings that you can use to tweak its behavior.
+
