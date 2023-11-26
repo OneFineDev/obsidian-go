@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "PostGres with GO",
-      "path": "projectTypes/PostGres/PostGres with GO.md"
+      "basename": "SQL Migrations",
+      "path": "projectTypes/SQL/SQL Migrations.md"
+    },
+    {
+      "basename": "PostGres (SQL) with GO",
+      "path": "projectTypes/SQL/PostGres (SQL) with GO.md"
     },
     {
       "basename": "API - JSON Tasks",
