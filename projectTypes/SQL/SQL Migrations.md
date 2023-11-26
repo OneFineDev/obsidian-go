@@ -20,3 +20,33 @@ Using migrations to manage your database schema, rather than manually executing 
 - The `-ext` flag indicates that we want to give the migration files the extension `.sql`.
 - The `-dir` flag indicates that we want to store the migration files in the `./migrations` directory (which will be created automatically if it doesn’t already exist).
 - The name `create_movies_table` is a descriptive label that we give the migration files to signify their contents.
+## Executing migrations
+
+`migrate -path=./migrations -database=$GREENLIGHT_DB_DSN up`
+
+#### Migrating to a specific version
+
+As an alternative to looking at the `schema_migrations` table, if you want to see which migration version your database is currently on you can run the `migrate` tool’s `version` command, like so:
+
+$ migrate -path=./migrations -database=$EXAMPLE_DSN version
+2
+
+You can also migrate up or down to a specific version by using the `goto` command:
+
+$ migrate -path=./migrations -database=$EXAMPLE_DSN goto 1
+
+#### Executing down migrations
+
+You can use the `down` command to roll-back by a specific number of migrations. For example, to rollback the _most recent migration_ you would run:
+
+$ migrate -path=./migrations -database =$EXAMPLE_DSN down 1
+
+Personally, I generally prefer to use the `goto` command to perform roll-backs (as it’s more explicit about the target version) and reserve use of the `down` command for rolling-back _all migrations_, like so:
+
+$ migrate -path=./migrations -database=$EXAMPLE_DSN down
+Are you sure you want to apply all down migrations? [y/N]
+y
+Applying all down migrations
+2/d create_bar_table (39.988791ms)
+1/d create_foo_table (59.460276ms)
+
