@@ -28,25 +28,20 @@ Using migrations to manage your database schema, rather than manually executing 
 
 As an alternative to looking at the `schema_migrations` table, if you want to see which migration version your database is currently on you can run the `migrate` tool’s `version` command, like so:
 
-$ migrate -path=./migrations -database=$EXAMPLE_DSN version
-2
+`migrate -path=./migrations -database=$EXAMPLE_DSN version 2`
 
 You can also migrate up or down to a specific version by using the `goto` command:
 
-$ migrate -path=./migrations -database=$EXAMPLE_DSN goto 1
+`migrate -path=./migrations -database=$EXAMPLE_DSN goto 1`
 
 #### Executing down migrations
 
 You can use the `down` command to roll-back by a specific number of migrations. For example, to rollback the _most recent migration_ you would run:
 
-$ migrate -path=./migrations -database =$EXAMPLE_DSN down 1
+`migrate -path=./migrations -database =$EXAMPLE_DSN down 1`
 
 Personally, I generally prefer to use the `goto` command to perform roll-backs (as it’s more explicit about the target version) and reserve use of the `down` command for rolling-back _all migrations_, like so:
 
-$ migrate -path=./migrations -database=$EXAMPLE_DSN down
-Are you sure you want to apply all down migrations? [y/N]
-y
-Applying all down migrations
-2/d create_bar_table (39.988791ms)
-1/d create_foo_table (59.460276ms)
+`migrate -path=./migrations -database=$EXAMPLE_DSN down`
+
 

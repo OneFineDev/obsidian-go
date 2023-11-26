@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "CRUD",
+      "path": "projectTypes/API/CRUD.md"
+    },
+    {
       "basename": "SQL Migrations",
       "path": "projectTypes/SQL/SQL Migrations.md"
     },
