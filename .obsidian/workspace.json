@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/API/API - JSON Tasks.md",
+                "file": "projectTypes/PostGres/PostGres with GO.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,8 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 284.5
   },
   "right": {
     "id": "e1f0d18a9b16f3a2",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/API/API - JSON Tasks.md"
+                "file": "projectTypes/PostGres/PostGres with GO.md"
               }
             }
           },
@@ -141,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/API/API - JSON Tasks.md",
+                "file": "projectTypes/PostGres/PostGres with GO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/API/API - JSON Tasks.md",
+                "file": "projectTypes/PostGres/PostGres with GO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,8 +237,10 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
-    "projectTypes/API/API - Application Structure.md",
     "projectTypes/API/API - JSON Tasks.md",
+    "projectTypes/PostGres/PostGres with GO.md",
+    "projectTypes/PostGres",
+    "projectTypes/API/API - Application Structure.md",
     "projectTypes/API",
     "top_level_mindmap.canvas",
     "projectTypes",
@@ -259,7 +260,6 @@
     "Domain Canvas.canvas",
     "_PARA/Domain-Technology/Pillar-Azure/Azure_Resource_Knowledgebase",
     "Excalidraw/Drawing 2023-08-12 13.06.09.excalidraw.md",
-    "Excalidraw",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Ingress.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/DNS_Core_DNS.md",
@@ -285,7 +285,6 @@
     "Inbox/Computer Capture/2023-08-03-22-56-31.md",
     "Inbox/Computer Capture/2023-08-03-22-56-12.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Taints_And_Tolerations.md",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Scheduling/Multiple_Schedulers.md",
     "System/Attachments/Pasted image 20230802184046.png",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
     "_PARA/Projects/Test Project 2/Canvas.canvas"
