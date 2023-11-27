@@ -237,8 +237,9 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
-    "projectTypes/SQL/SQL Migrations.md",
+    "projectTypes/API/GORM - TODO.md",
     "projectTypes/API/CRUD.md",
+    "projectTypes/SQL/SQL Migrations.md",
     "projectTypes/SQL/PostGres (SQL) with GO.md",
     "projectTypes/API/API - JSON Tasks.md",
     "projectTypes/SQL",
@@ -284,7 +285,6 @@
     "System/Attachments/Pasted image 20230804175024.png",
     "System/Attachments/Pasted image 20230804174741.png",
     "System/Attachments/Pasted image 20230804174203.png",
-    "Inbox/Computer Capture/2023-08-03-22-56-31.md",
     "System/Attachments/Pasted image 20230802184046.png",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
     "_PARA/Projects/Test Project 2/Canvas.canvas"

@@ -5,6 +5,10 @@
       "path": "projectTypes/API/CRUD.md"
     },
     {
+      "basename": "GORM - TODO",
+      "path": "projectTypes/API/GORM - TODO.md"
+    },
+    {
       "basename": "SQL Migrations",
       "path": "projectTypes/SQL/SQL Migrations.md"
     },
