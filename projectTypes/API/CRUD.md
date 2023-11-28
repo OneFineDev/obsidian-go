@@ -11,7 +11,7 @@ One of the nice things about this pattern is that the code to execute actions on
 `app.models.Movies.Insert(…)`
 
 # Go’s [`database/sql`](https://golang.org/pkg/database/sql/) package (as opposed to GORM)
-## Insert
+## Create
 
 Postgres: At the end of the query we have a [`RETURNING`](https://www.postgresql.org/docs/current/dml-returning.html) clause. This is a PostgreSQL-specific clause (it’s not part of the SQL standard) that you can use to return values from any record that is being manipulated by an `INSERT`, `UPDATE` or `DELETE` statement.
 
@@ -49,3 +49,17 @@ if err != nil {
 
 Having multiple statements in the same call is supported by the `pq` driver, _so long as the statements do not contain any placeholder parameters_. If they do contain placeholder parameters, then you’ll receive the following error message at runtime.
 To work around this, you will need to either split out the statements into separate database calls, or if that’s not possible, you can create a [custom function](https://www.postgresql.org/docs/current/xfunc-sql.html) in PostgreSQL which acts as a wrapper around the multiple SQL statements that you want to run.
+## Read
+
+
+## Update
+1. Extract the movie ID from the URL using the `app.readIDParam()` helper.
+2. Fetch the corresponding movie record from the database using the `Get()` method that we made in the previous chapter.
+3. Read the JSON request body containing the updated movie data into an `input` struct.
+4. Copy the data across from the `input` struct to the movie record.
+5. Check that the updated movie record is valid using the `data.ValidateMovie()` function.
+6. Call the `Update()` method to store the updated movie record in our database.
+7. Write the updated movie data in a JSON response using the `app.writeJSON()` helper.
+## Delete
+- If a movie with the `id` provided in the URL exists in the database, we want to delete the corresponding record and return a success message to the client.
+- If the movie `id` doesn’t exist, we want to return a `404 Not Found` response to the client.
