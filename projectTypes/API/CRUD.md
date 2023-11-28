@@ -22,3 +22,30 @@ Because the `Insert()` method signature takes a `*Movie` pointer as the para
 Note the `pq.Array()` method for handling array input into postgres.
 
 Then hook the `movie.Insert()` method to the corresponding handler. 
+
+**Extra Info**
+#### $N notation
+A nice feature of the PostgreSQL placeholder parameter `$N` notation is that you can use the same parameter value in multiple places in your SQL statement. For example, it’s perfectly acceptable to write code like this:
+``` go
+// This SQL statement uses the $1 parameter twice, and the value `123` will be used in 
+// both locations where $1 appears.
+stmt := "UPDATE foo SET bar = $1 + $2 WHERE bar = $1"
+err := db.Exec(stmt, 123, 456)
+if err != nil {
+    …
+}
+```
+#### Executing multiple statements
+Occasionally you might find yourself in the position where you want to execute more than one SQL statement in the same database call, like this:
+```go
+stmt := `
+    UPDATE foo SET bar = true;    UPDATE foo SET baz = false;`
+
+err := db.Exec(stmt)
+if err != nil {
+    …
+}
+```
+
+Having multiple statements in the same call is supported by the `pq` driver, _so long as the statements do not contain any placeholder parameters_. If they do contain placeholder parameters, then you’ll receive the following error message at runtime.
+To work around this, you will need to either split out the statements into separate database calls, or if that’s not possible, you can create a [custom function](https://www.postgresql.org/docs/current/xfunc-sql.html) in PostgreSQL which acts as a wrapper around the multiple SQL statements that you want to run.
