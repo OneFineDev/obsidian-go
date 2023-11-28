@@ -56,8 +56,9 @@ For example, the following request would result in no changes to the movie recor
 In most cases, it will probably suffice to explain this special-case behavior in client documentation for the endpoint and say something like _“JSON items with `null` values will be ignored and will remain unchanged”_.
 
 ## Optimistic Concurrency Control
+
 there is a [race condition](https://stackoverflow.com/questions/34510/what-is-a-race-condition) if two clients try to update the same movie record at exactly the same time.
- This specific type of race condition is known as a _data race_. Data races can occur when two or more goroutines try to use a piece of shared data (in this example the movie record) at the same time, but the result of their operations is dependent on the exact order that the scheduler executes their instructions.
+This specific type of race condition is known as a _data race_. Data races can occur when two or more goroutines try to use a piece of shared data (in this example the movie record) at the same time, but the result of their operations is dependent on the exact order that the scheduler executes their instructions.
 
 ### Preventing the data race
 [optimistic locking](https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking/129397#129397) based on the `version` number in our movie record.
@@ -79,3 +80,80 @@ If no matching record can be found, this query will result in a `sql.ErrNoRows`
 **Implementation**
 1. Custom data model error
 2.  update our database model’s `Update()` method to execute the new SQL query
+3. Custom error handler
+4. Implement in handler
+
+### Additional Information
+
+#### Round-trip locking
+
+One of the nice things about the optimistic locking pattern that we’ve used here is that you can extend it so the client passes the version number that _they expect_ in an `If-Not-Match` or `X-Expected-Version` header.
+
+In certain applications, this can be useful to help the client ensure they are not sending _their update request_ based on outdated information.
+
+Very roughly, you could implement this by adding a check to your `updateMovieHandler` like so:
+
+``` GO
+func (app *application) updateMovieHandler(w http.ResponseWriter, r *http.Request) {
+    id, err := app.readIDParam(r)
+    if err != nil {
+        app.notFoundResponse(w, r)
+        return
+    }
+
+    movie, err := app.models.Movies.Get(id)
+    if err != nil {
+        switch {
+        case errors.Is(err, data.ErrRecordNotFound):
+            app.notFoundResponse(w, r)
+        default:
+            app.serverErrorResponse(w, r, err)
+        }
+        return
+    }
+
+    // If the request contains a X-Expected-Version header, verify that the movie 
+    // version in the database matches the expected version specified in the header.
+    if r.Header.Get("X-Expected-Version") != "" {
+        if strconv.FormatInt(int64(movie.Version), 32) != r.Header.Get("X-Expected-Version") {
+            app.editConflictResponse(w, r)
+            return
+        }
+    }
+
+    …
+}
+```
+
+
+### Locking on other field types
+If it’s important to you that the version identifier isn’t guessable, then a good option is to use a high-entropy random string such as a UUID in the `version` field. PostgreSQL has a [UUID type](https://www.postgresql.org/docs/9.1/datatype-uuid.html) and the [`uuid-ossp`](https://www.postgresqltutorial.com/postgresql-uuid/) extension which you could use for this purpose like so:
+
+```
+UPDATE movies 
+SET title = $1, year = $2, runtime = $3, genres = $4, version = uuid_generate_v4()
+WHERE id = $5 AND version = $6
+RETURNING version
+```
+
+## Managing SQL Query Timeouts
+
+Go also provides _context-aware_ variants of these two methods: [`ExecContext()`](https://golang.org/pkg/database/sql/#DB.ExecContext) and [`QueryRowContext()`](https://golang.org/pkg/database/sql/#DB.QueryRowContext). These variants accept a [`context.Context`](https://golang.org/pkg/context/#Context) instance as the first parameter which you can leverage to _terminate running database queries_.
+
+ useful when _you have a SQL query that is taking longer to run than expected_. When this happens, it suggests a problem — either with that particular query or your database or application more generally — and you probably want to cancel the query (in order to free up resources), log an error for further investigation, and return a `500 Internal Server Error` response to the client.
+
+ let’s enforce a timeout so that the SQL query is automatically canceled if it doesn’t complete within 3 seconds.
+To do this we need to:
+
+1. Use the [`context.WithTimeout()`](https://golang.org/pkg/context/#WithTimeout) function to create a `context.Context` instance with a 3-second timeout deadline.
+2. Execute the SQL query using the `QueryRowContext()` method, passing the `context.Context` instance as a parameter.
+(See Code)
+
+After 3 seconds, the context timeout is reached and our `pq` database driver sends a cancellation signal to PostgreSQL†.
+† More precisely, our context (the one with the 3-second timeout) has a `Done` channel, and when the timeout is reached the `Done` channel will be closed. While the SQL query is running, our database driver `pq` is also running a background goroutine which listens on this `Done` channel. If the channel gets closed, then `pq` sends a cancellation signal to PostgreSQL. PostgreSQL terminates the query, and then sends the error message that we see above as a response to the original `pq` goroutine. That error message is then returned to our database model’s `Get()` method.
+
+### Timeouts outside of PostgreSQL
+
+There’s another important thing to point out here: _it’s possible that the timeout deadline will be hit before the PostgreSQL query even starts_.
+
+You might remember that earlier in the book we configured our `sql.DB` connection pool to allow a maximum of 25 open connections. If all those connections are in-use, then any additional queries will be ‘queued’ by `sql.DB` until a connection becomes available. In this scenario — or any other which causes a delay — it’s possible that the timeout deadline will be hit before a free database connection even becomes available.
