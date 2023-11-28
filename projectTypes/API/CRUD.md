@@ -50,7 +50,7 @@ if err != nil {
 Having multiple statements in the same call is supported by the `pq` driver, _so long as the statements do not contain any placeholder parameters_. If they do contain placeholder parameters, then you’ll receive the following error message at runtime.
 To work around this, you will need to either split out the statements into separate database calls, or if that’s not possible, you can create a [custom function](https://www.postgresql.org/docs/current/xfunc-sql.html) in PostgreSQL which acts as a wrapper around the multiple SQL statements that you want to run.
 ## Read
-
+Because our `movies` table uses the `id` column as its primary key, this query will only ever return exactly one database row (or none at all). So, it’s appropriate for us to execute this query using Go’s `QueryRow()` method again.
 
 ## Update
 1. Extract the movie ID from the URL using the `app.readIDParam()` helper.
@@ -63,3 +63,11 @@ To work around this, you will need to either split out the statements into separ
 ## Delete
 - If a movie with the `id` provided in the URL exists in the database, we want to delete the corresponding record and return a success message to the client.
 - If the movie `id` doesn’t exist, we want to return a `404 Not Found` response to the client.
+
+In this case the SQL query returns no rows, so it’s appropriate for us to use Go’s [`Exec()`](https://golang.org/pkg/database/sql/#DB.Exec) method to execute it.
+
+One of the nice things about `Exec()` is that it returns a [`sql.Result`](https://golang.org/pkg/database/sql/#Result) object, which contains information about the _number of rows that the query affected_. In our scenario here, this is really useful information.
+
+- If the number of rows affected is `1`, then we know that the movie existed in the table and has now been deleted… so we can send the client a success message.
+- Conversely, if the number of rows affected is `0` we know that no movie with that `id` existed at the point we tried to delete it, and we can send the client a `404 Not Found` response.
+
