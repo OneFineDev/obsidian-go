@@ -13,3 +13,14 @@
 - There are some validation checks that we’ll want to apply to the query string values, like making sure that `page` and `page_size` are not negative numbers.
 - We want our application to set some sensible _default values_ in case parameters like `page`, `page_size` and `sort` aren’t provided by the client
 
+**Helper functions**
+
+## Filtering
+Create a filter struct and embed this in the data input struct
+
+## Validation on Query Strings
+Leverage existing validator, leverage sort-safe list for the handler.
+
+## Listing
+- Get all
+- 
