@@ -59,3 +59,59 @@ The `(genres @> $2 OR $2 = '{}')` condition works in the same way. The `@>` 
 **Note:** PostgreSQL also provides a range of other useful array operators and functions, including the `&&` ‘overlap’ operator, the `<@` ‘contained by’ operator, and the `array_length()` function. A complete list [can be found here](https://www.postgresql.org/docs/9.6/functions-array.html).
 
 ## Full-text Search
+PostgreSQL full-text search is a powerful and highly-configurable tool, and explaining how it works and the available options in full could easily take up a whole book in itself. So we’ll keep the explanations in this chapter high-level, and focus on the practical implementation.
+
+To implement a basic full-text search on our `title` field, we’re going to update our SQL query to look like this:
+``` SQL
+SELECT id, created_at, title, year, runtime, genres, version
+FROM movies
+WHERE (to_tsvector('simple', title) @@ plainto_tsquery('simple', $1) OR $1 = '') 
+AND (genres @> $2 OR $2 = '{}')     
+ORDER BY id
+```
+
+The `to_tsvector('simple', title)` function takes a movie title and splits it into _lexemes_. We specify the `simple` configuration, which means that the lexemes are just lowercase versions of the words in the title†. For example, the movie title `"The Breakfast Club"` would be split into the lexemes `'breakfast' 'club' 'the'`.
+
+The `plainto_tsquery('simple', $1)` function takes a search value and turns it into a formatted _query term_ that PostgreSQL full-text search can understand. It normalizes the search value (again using the `simple` configuration), strips any special characters, and inserts the _and operator_ `&` between the words. As an example, the search value `"The Club"` would result in the query term `'the' & 'club'`.
+
+The `@@` operator is the matches operator. In our statement we are using it to check whether the generated _query term matches the lexemes_. To continue the example, the query term `'the' & 'club'` will match rows which contain _both_ lexemes `'the'` and `'club'`.
+
+### Adding indexes
+see docs + code
+
+## Sorting
+Aim:
+```
+// Sort the movies on the title field in ascending alphabetical order.
+/v1/movies?sort=title
+
+// Sort the movies on the year field in descending numerical order.
+/v1/movies?sort=-year
+```
+Behind the scenes we will want to translate this into an [`ORDER BY`](https://www.postgresql.org/docs/current/queries-order.html) clause in our SQL query, so that a query string parameter like `sort=-year` would result in a SQL query like this:
+```SQL
+SELECT id, created_at, title, year, runtime, genres, version
+FROM movies
+WHERE (STRPOS(LOWER(title), LOWER($1)) > 0 OR $1 = '') 
+AND (genres @> $2 OR $2 = '{}')     
+ORDER BY year DESC --<-- Order the result by descending year
+```
+
+The difficulty here is that the values for the `ORDER BY` clause will need to be generated at runtime based on the query string values from the client. Ideally we’d use placeholder parameters to insert these dynamic values into our query, but unfortunately it’s _not possible to use placeholder parameters for column names or SQL keywords_ (including `ASC` and `DESC`).
+
+So instead, we’ll need to interpolate these dynamic values into our query using `fmt.Sprintf()` — making sure that the values are checked against a strict safelist first to prevent a SQL injection attack.
+
+ We need to make sure that the order of movies is perfectly consistent between requests to prevent items in the list ‘jumping’ between the pages.
+
+Fortunately, guaranteeing the order is simple — we just need to ensure that the `ORDER BY` clause always includes a primary key column (or another column with a unique constraint on it). So, in our case, we can apply a secondary sort on the `id` column to ensure an always-consistent order. Like so:
+```SQL
+SELECT id, created_at, title, year, runtime, genres, version
+FROM movies
+WHERE (STRPOS(LOWER(title), LOWER($1)) > 0 OR $1 = '') 
+AND (genres @> $2 OR $2 = '{}')     
+ORDER BY year DESC, id ASC
+```
+
+### Implementing sorting
+To get the dynamic sorting working, let’s begin by updating our `Filters` struct to include some `sortColumn()` and `sortDirection()` helpers that transform a query string value (like `-year`) into values we can use in our SQL query.
+
