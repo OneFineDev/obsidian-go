@@ -114,4 +114,55 @@ ORDER BY year DESC, id ASC
 
 ### Implementing sorting
 To get the dynamic sorting working, let’s begin by updating our `Filters` struct to include some `sortColumn()` and `sortDirection()` helpers that transform a query string value (like `-year`) into values we can use in our SQL query.
+## Paginating Lists
+Target:
+```
+// Return the 5 records on page 1 (records 1-5 in the dataset)
+/v1/movies?page=1&page_size=5
 
+// Return the next 5 records on page 2 (records 6-10 in the dataset)
+/v1/movies?page=2&page_size=5
+
+// Return the next 5 records on page 3 (records 11-15 in the dataset)
+/v1/movies?page=3&page_size=5
+```
+
+### The LIMIT and OFFSET clauses
+
+The `LIMIT` clause allows you to set the maximum number of records that a SQL query should return, and `OFFSET` allows you to ‘skip’ a specific number of rows before starting to return records from the query.
+
+if a client makes the following request:
+
+`/v1/movies?page_size=5&page=3`
+
+We would need to ‘translate’ this into the following SQL query:
+```SQL 
+SELECT id, created_at, title, year, runtime, genres, version
+FROM movies
+WHERE (to_tsvector('simple', title) @@ plainto_tsquery('simple', $1) OR $1 = '') 
+AND (genres @> $2 OR $2 = '{}')     
+ORDER BY %s %s, id ASC
+LIMIT 5 OFFSET 10
+```
+
+## Returning Pagination Metadata
+### Calculating the total records
+
+The challenging part of doing this is generating the `total_records` figure. We want this to reflect the total number of available records _given the `title` and `genres` filters that are applied_ — not the absolute total of records in the `movies` table.
+
+A neat way to do this is to adapt our existing SQL query to include a [window function](https://www.postgresql.org/docs/current/tutorial-window.html) which counts the total number of filtered rows, like so:
+
+```SQL
+SELECT count(*) OVER(), id, created_at, title, year, runtime, genres, version
+FROM movies
+WHERE (to_tsvector('simple', title) @@ plainto_tsquery('simple', $1) OR $1 = '') 
+AND (genres @> $2 OR $2 = '{}')     
+ORDER BY %s %s, id ASC
+LIMIT $3 OFFSET $4
+```
+
+The inclusion of the `count(*) OVER()` expression at the start of the query will result in the filtered record count being included as the first value in each row.
+1. The `WHERE` clause is used to filter the data in the `movies` table and get the _qualifying rows_.
+2. The window function `count(*) OVER()` is applied, which counts all the qualifying rows.
+3. The `ORDER BY` rules are applied and the qualifying rows are sorted.
+4. The `LIMIT` and `OFFSET` rules are applied and the appropriate sub-set of sorted qualifying rows is returned.
