@@ -5,3 +5,27 @@ Essentially, we want this middleware to check how many requests have been receiv
 - How to create middleware to rate-limit requests to your API endpoints, first by making a single rate global limiter, then extending it to support per-client limiting based on IP address.
     
 - How to make rate limiter behavior configurable at runtime, including disabling the rate limiter altogether for testing purposes.
+
+## Token bucket
+- We will have a bucket that starts with `b` tokens in it.
+- Each time we receive a HTTP request, we will remove one token from the bucket.
+- Every `1/r` seconds, a token is added back to the bucket — up to a maximum of `b` total tokens.
+- If we receive a HTTP request and the bucket is empty, then we should return a `429 Too Many Requests` response.
+
+
+One of the nice things about the middleware pattern that we are using is that it is straightforward to include ‘initialization’ code which only runs once when we _wrap_ something with the middleware, rather than running on every request that the middleware handles:
+```go
+func (app *application) exampleMiddleware(next http.Handler) http.Handler {
+    
+    // Any code here will run only once, when we wrap something with the middleware. 
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        
+        // Any code here will run for every request that the middleware handles.
+        next.ServeHTTP(w, r)
+    })
+}
+```
+
+we want to add the `rateLimit()` middleware to our middleware chain. This should come after our panic recovery middleware (so that any panics in `rateLimit()` are recovered), but otherwise we want it to be used as early as possible to prevent unnecessary work for our server.
+
+## IP-base limiting
