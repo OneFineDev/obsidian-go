@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Graceful Shutdown",
+      "path": "projectTypes/API/Graceful Shutdown.md"
+    },
+    {
       "basename": "Rate Limiting",
       "path": "projectTypes/API/Rate Limiting.md"
     },

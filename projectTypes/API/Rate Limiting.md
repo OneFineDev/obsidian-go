@@ -36,3 +36,5 @@ Using this pattern for rate-limiting will only work if your API application is r
 If you’re using HAProxy or Nginx as a load balancer or reverse proxy, both of these have built-in functionality for rate limiting that it would probably be sensible to use. Alternatively, you could use a fast database like Redis to maintain a request count for clients, running on a server which all your application servers can communicate with.
 
 ## Rate limiter config
+Env vars to configure Enabled, Max Reqs and Burst
+
