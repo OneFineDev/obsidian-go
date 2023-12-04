@@ -5,16 +5,16 @@
       "path": "projectTypes/API/Graceful Shutdown.md"
     },
     {
+      "basename": "Advanced CRUD",
+      "path": "projectTypes/API/Advanced CRUD.md"
+    },
+    {
       "basename": "Rate Limiting",
       "path": "projectTypes/API/Rate Limiting.md"
     },
     {
       "basename": "Filter, Sort, Page",
       "path": "projectTypes/API/Filter, Sort, Page.md"
-    },
-    {
-      "basename": "Advanced CRUD",
-      "path": "projectTypes/API/Advanced CRUD.md"
     },
     {
       "basename": "CRUD",
