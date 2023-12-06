@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Users Table",
+      "path": "projectTypes/SQL/Users Table.md"
+    },
+    {
       "basename": "Graceful Shutdown",
       "path": "projectTypes/API/Graceful Shutdown.md"
     },
