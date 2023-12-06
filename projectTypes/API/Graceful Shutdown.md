@@ -61,3 +61,7 @@ Specifically, after receiving one of these signals we will call the [`Shutdown(
 > Shutdown gracefully shuts down the server without interrupting any active connections. Shutdown works by first closing all open listeners, then closing all idle connections, and then waiting indefinitely for connections to return to idle and then shut down.
 
 The pattern to implement this in practice is difficult to describe with words, so let’s jump into the code and talk through the details as we go along.
+
+what it’s doing can be summarized very simply: _when we receive a `SIGINT` or `SIGTERM` signal, we instruct our server to stop accepting any new HTTP requests, and give any in-flight requests a ‘grace period’ of 30 seconds to complete before the application is terminated_.
+
+It’s important to be aware that the `Shutdown()` method does not wait for any background tasks to complete, nor does it close hijacked long-lived connections like WebSockets. Instead, you will need to implement your own logic to coordinate a graceful shutdown of these things. We’ll look at some techniques for doing this later in the book.
