@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/SQL/Users Table.md",
+                "file": "projectTypes/API/USER Models.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/SQL/Users Table.md"
+                "file": "projectTypes/API/USER Models.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/SQL/Users Table.md",
+                "file": "projectTypes/API/USER Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/SQL/Users Table.md",
+                "file": "projectTypes/API/USER Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,8 +237,9 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
-    "projectTypes/API/Graceful Shutdown.md",
     "projectTypes/SQL/Users Table.md",
+    "projectTypes/API/USER Models.md",
+    "projectTypes/API/Graceful Shutdown.md",
     "projectTypes/API/Advanced CRUD.md",
     "projectTypes/API/Rate Limiting.md",
     "projectTypes/API/Filter, Sort, Page.md",
@@ -275,7 +276,6 @@
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Concept_Review_Linux_Networking.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/_Kubernetes_Commands_QuickRef.md",
     "K8S - Scheduling.md",
-    "Languages_GO_Books_MasteringGO_Chapter2.md",
     "System/Attachments/Pasted image 20230804201643.png",
     "System/Attachments/Pasted image 20230804201347.png",
     "System/Attachments/Pasted image 20230804200738.png",
