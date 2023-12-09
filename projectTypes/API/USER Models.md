@@ -2,4 +2,5 @@
 
 - password hashing and checking
 - input validation
-- 
+- user model
+
