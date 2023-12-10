@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Authentication",
+      "path": "projectTypes/API/Authentication.md"
+    },
+    {
       "basename": "Users",
       "path": "projectTypes/API/Users.md"
     },

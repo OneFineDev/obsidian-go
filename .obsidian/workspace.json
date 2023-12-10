@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/API/Users.md",
+                "file": "projectTypes/API/Authentication.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/API/Users.md"
+                "file": "projectTypes/API/Authentication.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/API/Users.md",
+                "file": "projectTypes/API/Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/API/Users.md",
+                "file": "projectTypes/API/Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,8 +237,9 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
-    "projectTypes/SQL/Users Table.md",
     "projectTypes/API/Users.md",
+    "projectTypes/API/Authentication.md",
+    "projectTypes/SQL/Users Table.md",
     "projectTypes/API/Background Go Routines.md",
     "projectTypes/API/Graceful Shutdown.md",
     "projectTypes/API/Advanced CRUD.md",
@@ -275,7 +276,6 @@
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/DNS_Core_DNS.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Cluster_and_Pod_Networking_CNI.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Concept_Review_Linux_Networking.md",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/_Kubernetes_Commands_QuickRef.md",
     "System/Attachments/Pasted image 20230804201643.png",
     "System/Attachments/Pasted image 20230804201347.png",
     "System/Attachments/Pasted image 20230804200738.png",
