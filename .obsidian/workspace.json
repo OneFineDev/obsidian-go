@@ -237,9 +237,9 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
-    "projectTypes/API/Background Go Routines.md",
-    "projectTypes/API/Users.md",
     "projectTypes/SQL/Users Table.md",
+    "projectTypes/API/Users.md",
+    "projectTypes/API/Background Go Routines.md",
     "projectTypes/API/Graceful Shutdown.md",
     "projectTypes/API/Advanced CRUD.md",
     "projectTypes/API/Rate Limiting.md",

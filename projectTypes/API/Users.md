@@ -46,3 +46,4 @@ CREATE TABLE IF NOT EXISTS tokens (
 4. We activate the associated user by setting `activated = true` on the user record and update it in our database.
 5. We delete all activation tokens for the user from the `tokens` table. We can do this using the `TokenModel.DeleteAllForUser()` method that we made earlier.
 6. We send the updated user details in a JSON response.
+

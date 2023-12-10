@@ -5,12 +5,12 @@
       "path": "projectTypes/API/Users.md"
     },
     {
-      "basename": "Background Go Routines",
-      "path": "projectTypes/API/Background Go Routines.md"
-    },
-    {
       "basename": "Users Table",
       "path": "projectTypes/SQL/Users Table.md"
+    },
+    {
+      "basename": "Background Go Routines",
+      "path": "projectTypes/API/Background Go Routines.md"
     },
     {
       "basename": "Graceful Shutdown",
