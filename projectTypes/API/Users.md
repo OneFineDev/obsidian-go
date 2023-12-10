@@ -38,3 +38,11 @@ CREATE TABLE IF NOT EXISTS tokens (
     Of course, the security risks here need to be weighed up against usability, and we want the expiry time to be long enough for a user to be able to activate the account at their leisure. In our case, we’ll set the expiry time for our activation tokens to 3 days from the moment the token was created.
     
 - Lastly, the `scope` column will denote what _purpose_ the token can be used for. Later in the book we’ll also need to create and store _authentication tokens_, and most of the code and storage requirements for these is exactly the same as for our activation tokens. So instead of creating separate tables (and the code to interact with them), we’ll store them in one table with a value in the `scope` column to restrict the purpose that the token can be used for.
+## Activation
+
+1. The user submits the plaintext activation token (which they just received in their email) to the `PUT /v1/users/activated` endpoint.
+2. We validate the plaintext token to check that it matches the expected format, sending the client an error message if necessary.
+3. We then call the `UserModel.GetForToken()` method to retrieve the details of the user associated with the provided token. If there is no matching token found, or it has expired, we send the client an error message.
+4. We activate the associated user by setting `activated = true` on the user record and update it in our database.
+5. We delete all activation tokens for the user from the `tokens` table. We can do this using the `TokenModel.DeleteAllForUser()` method that we made earlier.
+6. We send the updated user details in a JSON response.
