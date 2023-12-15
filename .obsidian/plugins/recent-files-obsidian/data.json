@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "CORS",
+      "path": "projectTypes/API/CORS.md"
+    },
+    {
       "basename": "Authorization",
       "path": "projectTypes/API/Authorization.md"
     },

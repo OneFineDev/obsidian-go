@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/API/Authorization.md",
+                "file": "projectTypes/API/CORS.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/API/Authorization.md"
+                "file": "projectTypes/API/CORS.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/API/Authorization.md",
+                "file": "projectTypes/API/CORS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/API/Authorization.md",
+                "file": "projectTypes/API/CORS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,9 +237,10 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
+    "projectTypes/API/Authorization.md",
+    "projectTypes/API/CORS.md",
     "Pasted image 20231215072752.png",
     "projectTypes/API/Authentication.md",
-    "projectTypes/API/Authorization.md",
     "projectTypes/API/Users.md",
     "projectTypes/SQL/Users Table.md",
     "projectTypes/API/Background Go Routines.md",
@@ -285,7 +286,6 @@
     "System/Attachments/Pasted image 20230804175024.png",
     "System/Attachments/Pasted image 20230804174741.png",
     "System/Attachments/Pasted image 20230804174203.png",
-    "System/Attachments/Pasted image 20230802184046.png",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
     "_PARA/Projects/Test Project 2/Canvas.canvas"
   ]
