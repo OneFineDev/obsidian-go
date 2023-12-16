@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Metrics with expvar",
+      "path": "projectTypes/API/Metrics with expvar.md"
+    },
+    {
       "basename": "CORS",
       "path": "projectTypes/API/CORS.md"
     },
