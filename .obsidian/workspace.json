@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projectTypes/API/Metrics with expvar.md",
+                "file": "tooling/Tooling.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projectTypes/API/Metrics with expvar.md"
+                "file": "tooling/Tooling.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projectTypes/API/Metrics with expvar.md",
+                "file": "tooling/Tooling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projectTypes/API/Metrics with expvar.md",
+                "file": "tooling/Tooling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,8 +237,10 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
-    "projectTypes/API/CORS.md",
     "projectTypes/API/Metrics with expvar.md",
+    "tooling/Tooling.md",
+    "tooling",
+    "projectTypes/API/CORS.md",
     "projectTypes/API/Authorization.md",
     "Pasted image 20231215072752.png",
     "projectTypes/API/Authentication.md",
@@ -273,10 +275,8 @@
     "_PARA/Domain-Technology/Pillar-Programming/Areas/PowerShell/ModuleManagement",
     "_PARA/Domain-Technology/Pillar-Programming/Areas/Git",
     "Domain Canvas.canvas",
-    "_PARA/Domain-Technology/Pillar-Azure/Azure_Resource_Knowledgebase",
     "Excalidraw/Drawing 2023-08-12 13.06.09.excalidraw.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Networking/Ingress.md",
     "System/Attachments/Pasted image 20230804201643.png",
     "System/Attachments/Pasted image 20230804201347.png",
     "System/Attachments/Pasted image 20230804200738.png",

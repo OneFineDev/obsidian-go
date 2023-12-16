@@ -1,0 +1,6 @@
+- Use a makefile to automate common tasks in your project, such as creating and executing migrations.
+- Carry out quality control checks of your code using the `go vet` and `staticcheck` tools.
+- Vendor third-party packages, in case they ever become unavailable in the future.
+- Build and run executable binaries for your applications, reduce their size, and cross-compile binaries for different platforms.
+- Burn-in a version number and build time to your application when building the binary.
+- Leverage Git to generate automated version numbers as part of your build process.
