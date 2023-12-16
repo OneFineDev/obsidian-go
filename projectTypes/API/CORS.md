@@ -1,0 +1,5 @@
+If we positioned it after our rate limiter, for example, any cross-origin requests that exceed the rate limit would _not have the `Access-Control-Allow-Origin` header set_. This means that they would be blocked by the client’s web browser due to the same-origin policy, rather than the client receiving a `429 Too Many Requests` response like they should.
+
+So because of this we should make sure to always set a `Vary: Origin` response header to warn any caches that the response may be different. This is actually really important, and it can be the cause of subtle bugs [like this one](https://textslashplain.com/2018/08/02/cors-and-vary/) if you forget to do it. As a rule of thumb:
+
+_If your code makes a decision about what to return based on the content of a request header, you should include that header name in your `Vary` response header — even if the request didn’t include that header._
