@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"2a19d4bad7b5ded3","x":-740,"y":-180,"width":250,"height":120,"type":"text","text":"**Authentication**"},
+		{"id":"7428e55e704b1410","x":-780,"y":0,"width":360,"height":85,"type":"text","text":"UserModel.Exists(id)(bool, error)"},
+		{"id":"93ce3bb89c98469d","x":-564,"y":220,"width":250,"height":60,"type":"text","text":"*User exists*"},
+		{"id":"03c3df207ee9f660","type":"text","text":"*User doesn't exist*","x":-865,"y":220,"width":250,"height":60},
+		{"id":"5c7b3e4ad5591154","x":-865,"y":357,"width":250,"height":100,"type":"text","text":"UserModel.Insert(id)(bool, error)"},
+		{"id":"efd1c2c1c4c7dbb1","type":"text","text":"app.sessionManager.Put(r.Context(), \"authenticatedUserID\", id)","x":-806,"y":540,"width":412,"height":94}
+	],
+	"edges":[
+		{"id":"fbeab0c24b86ce58","fromNode":"7428e55e704b1410","fromSide":"bottom","toNode":"03c3df207ee9f660","toSide":"top"},
+		{"id":"2e96dfae66d0e2e2","fromNode":"7428e55e704b1410","fromSide":"bottom","toNode":"93ce3bb89c98469d","toSide":"top"},
+		{"id":"4831c72d29d2cba0","fromNode":"03c3df207ee9f660","fromSide":"bottom","toNode":"5c7b3e4ad5591154","toSide":"top"},
+		{"id":"887ba2e605ccc12f","fromNode":"5c7b3e4ad5591154","fromSide":"bottom","toNode":"efd1c2c1c4c7dbb1","toSide":"top"},
+		{"id":"df4484e7e910cea6","fromNode":"93ce3bb89c98469d","fromSide":"bottom","toNode":"efd1c2c1c4c7dbb1","toSide":"top"}
+	]
+}

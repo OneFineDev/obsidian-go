@@ -13,10 +13,10 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "top_level_mindmap.canvas",
+                "file": "Projects/IELTSBooster/Untitled.canvas",
                 "viewState": {
-                  "x": -431,
-                  "y": -154,
+                  "x": -394,
+                  "y": 365,
                   "zoom": 0
                 }
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "top_level_mindmap.canvas"
+                "file": "Projects/IELTSBooster/Untitled.canvas"
               }
             }
           },
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "top_level_mindmap.canvas",
+                "file": "Projects/IELTSBooster/Untitled.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "top_level_mindmap.canvas",
+                "file": "Projects/IELTSBooster/Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,9 +238,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "349190d1d4557a61",
+  "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
     "Projects/IELTSBooster/Application Spec Document.md",
+    "Projects/IELTSBooster/Untitled.canvas",
+    "top_level_mindmap.canvas",
     "tooling/Tooling.md",
     "Projects/IELTSBooster",
     "Projects",
@@ -265,7 +267,6 @@
     "projectTypes/SQL",
     "projectTypes/API/API - Application Structure.md",
     "projectTypes/API",
-    "top_level_mindmap.canvas",
     "projectTypes",
     "languageFeatures",
     "algorithms",
@@ -277,7 +278,6 @@
     "Calendar/Daily/2023-08-28.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_Helm_Course",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Cluster_Build_Notes/Cluster_Build_Notes.md",
-    "_PARA/Domain-Technology/Pillar-Azure/Azure_Resource_Knowledgebase/Azure_Container_Registry.md",
     "Domain Canvas.canvas",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
     "System/Attachments/Pasted image 20230804201643.png",
