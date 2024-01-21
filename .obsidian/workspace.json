@@ -11,14 +11,11 @@
             "id": "ae5c201a8be5eb66",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas",
-                "viewState": {
-                  "x": -394,
-                  "y": 86,
-                  "zoom": 0
-                }
+                "file": "Projects/IELTSBooster/AI/Part 2 Writing.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -117,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas"
+                "file": "Projects/IELTSBooster/AI/Part 2 Writing.md"
               }
             }
           },
@@ -143,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas",
+                "file": "Projects/IELTSBooster/AI/Part 2 Writing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas",
+                "file": "Projects/IELTSBooster/AI/Part 2 Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,6 +238,8 @@
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
     "Projects/IELTSBooster/Application Spec Document.md",
+    "Projects/IELTSBooster/AI/Part 2 Writing.md",
+    "Projects/IELTSBooster/AI",
     "Projects/IELTSBooster/Untitled.canvas",
     "top_level_mindmap.canvas",
     "tooling/Tooling.md",
@@ -276,7 +275,6 @@
     "_PARA/Projects/jikhk/jikhk.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_Helm_Course/Helm_Fundamentals.md",
     "Calendar/Daily/2023-08-28.md",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_Helm_Course",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Cluster_Build_Notes/Cluster_Build_Notes.md",
     "Domain Canvas.canvas",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
