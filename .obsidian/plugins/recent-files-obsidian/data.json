@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "top_level_mindmap",
+      "path": "top_level_mindmap.canvas"
+    },
+    {
       "basename": "Application Spec Document",
       "path": "Projects/IELTSBooster/Application Spec Document.md"
     },
@@ -75,10 +79,6 @@
     {
       "basename": "API - Application Structure",
       "path": "projectTypes/API/API - Application Structure.md"
-    },
-    {
-      "basename": "top_level_mindmap",
-      "path": "top_level_mindmap.canvas"
     }
   ],
   "omittedPaths": [],
