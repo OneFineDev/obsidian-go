@@ -17,3 +17,30 @@ This is a markdown table of the assessment criteria:
 
 The question is: 
 "Some people believe that social media sites, such as Facebook or Twitter, have a negative impact on young people and their ability to form personal relationships. Others believe that these sites bring people together in a beneficial way."
+
+Assess the essay in the following format. 
+
+| Areas                          | Band Score | Justification                                                | Examples |
+| ------------------------------ | ---------- | ------------------------------------------------------------ | -------- |
+| Task Achievement               | Band score for Task Achievement            | 5-6 sentences of justification with examples from the answer | 3 -4 Examples of how the answer could be improved.         |
+| Coherence and Cohesion         | Band score for Coherence and Cohesion           | 5-6 sentences of justification with examples from the answer                                                             | 3 -4 Examples of how the answer could be improved.         |
+| Lexical Resource               | Band score for Lexical Resource           | 5-6 sentences of justification with examples from the answer                                                             | 3 -4 Examples of how the answer could be improved.         |
+| Grammatical Range and Accuracy | Band score for Grammatical Range and Accuracy           | 5-6 sentences of justification with examples from the answer                                                             | 3 -4 Examples of how the answer could be improved.         |
+
+Ensure you provide the stated number of examples and length of feedback. Ensure you provide specific examples (either with phrases, grammatical structures or topic-specific vocabulary)
+
+Lean towards being more generous with scoring, and feel free to use .5 increments in band scores.
+
+After the assessment in markdown format, provide a list of 10 specific examples of how the answer could be improved., focusing specifically on correcting errors in grammar and vocabulary.  Do this by presenting the original text next to your suggested improvements.
+
+Answer (delimited by === ):
+
+===
+People have a mixed opinion about social media sites. such as Facebook and Twitter. Some believe that these sites hinder relationships among youth while some think they bring people together in a good way. I personally think that social media is a good thing since it has drastically improved the way we communicate with others.
+
+Most importantly social media sites help us connect with someone who is halfway down the world. We can reach them by a simple audio or video call unlike before when it took days together to communicate to them using letters. They have helped us keep in touch with our beloved ones on a daily basis and even celebrate important occasions together virtually. For example online marriages have become a recent trend nowadays where the bride and the groom marry in a church and they live telecast the whole event in Facebook or Youtube for the people who live far away or who couldn’t make it to the wedding.That way people don’t have to miss out important occasions.Social media has become an integral part of our lives.
+
+Another major reason why people love social media is , it keeps us informed and well educated. News nowadays travels faster through social media than Newspaper or a news channel. Furthermore we can be a part of major protests without leaving the safety of our house through social networking sites. All we have to do is tweet is support of a protest or sign a petition.Many of these sites even have online support groups for people going through major life changes or tragedies.
+
+In conclusion, social media is a blessing to mankind when used the right way. It keeps us well-connected, well-informed and well-educated. After all we are humans and we thrive by socialising and social media is the way to do it.
+===
