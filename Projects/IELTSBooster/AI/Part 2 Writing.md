@@ -32,18 +32,18 @@ Assess the essay in the following format; provide feedback in EXACTLY this forma
 
 Ensure you provide the stated number of examples and length of feedback. Ensure you provide specific examples (either with phrases, grammatical structures or topic-specific vocabulary)
 
-Lean towards being more generous with scoring, and feel free to use .5 increments in band scores.
+Lean towards being more generous with scoring, and feel free to use .5 increments in band scores. 
 
-After the assessment in markdown format, provide a list of 10 specific examples of how the answer could be improved., focusing specifically on correcting errors in grammar and vocabulary.  Do this by presenting the original text next to your suggested improvements.
+After the assessment in markdown format, provide a list of 10 specific examples of how the answer could be improved., focusing specifically on correcting errors in grammar and vocabulary. ONLY DO THIS IF NECESSARY; YOU DO NOT HAVE TO IMPROVE SENTENCES THAT DON'T REQUIRE IMPROVEMENTS.  Do this by presenting the original text next to your suggested improvements.
 
 Answer (delimited by === ):
 
 ===
-In the modern world, many cities are full of cars, factories and etc., which are running on gas. Hence, a lot of countries are having huge problems with their environment, with polluting their land, water and atmosphere. In this essay, I will examine the impact this has had on many countries and suggest how this problem can be solved.
+Countries around the globe are dealing with pollution of all kinds to lesser or greater extents. This essay will consider how this pollution manifests itself across land, air and sea, and provides suggestions on how the impact might be reduced.
 
-The foremost issue with poisoning surroundings, such as air and water infection with traffic fumes and garbage, thrown in rivers and seas. This could lead to global catastrophe, because the air and water would be full of deadly viruses and garbage, that could result in infecting many people with new lethal diseases. For example, India has the dirtiest river in the world, that is called Gang. Many people wash themselves and drinking the water from the stream, while it is filling up with human and industrial waste, turning into a toxic body of water. The most common illnesses, that people are dying because, are diphtheria and cholera.
+One of the leading causes of land pollution is the dumping of waste (both household and industrial). Domestic waste in landfill is not only ugly, toxic chemicals and compounds can seep into the groundwater. Likewise, there are many examples of companies dumping waste to cut cost, again impacting both wildlife and human health.  One way to combat the proliferation of domestic waste would be to enforce recycling at the local government level. As for industrial waste, harsh financial penalties for even the smallest contravention of pollution laws should be imposed on companies.
 
-A possible solution to this problem is to switch to natural energy use, such as sun energy, electricity and etc. We could remove transport that runs on gas, with electric ones. Also, we can build solar energy producers to produce energy for cities and villages. For instance, in Us there is a lot of cities, that use sun energy panels to generate electricity. But many countries can’t afford this, because they don’t have enough money to buy developed technologies.
+Water pollution is largely caused by industry, including run-off of fertilizer from agricultural land into waterways, discharging of sewage by water companies, and companies simply dumping waste into seas. This has an impact on aquatic wildlife, but can also impact human health when people enter affected bodies of water. Since this is an issue mainly cause by industry, a combination of financial incentives for reducing water pollution, and sanction for excessive pollution should be implemented.
 
-In conclusion, with growth of pollute emitters, our world can turn into the lifeless place. To avoid that, all countries should start reducing the rubbish on the streets, filtering the air and clean the water in rivers and lakes.
+When it comes to air pollution, the burning of fossil fuels is the lead contributor. The key impact of this is increased occurrence of respiratory disease in areas with high levels of air pollution. Households and industry are both culpable, since emissions are caused by vehicle use and home heating, as well as industrial production that uses coal and oil. A speedy effort, subsidized and expedited by international governments, to switch to low carbon economies is the main way in which this can be combated.
 ===
