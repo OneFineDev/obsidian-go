@@ -16,16 +16,19 @@ This is a markdown table of the assessment criteria:
 | 0    | Does not attempt the task; provides a completely unrelated or illegible response.                                             | Writing is so incoherent that it is impossible to assess.                                                                      | Uses no recognizable vocabulary; writing is essentially a collection of unconnected words.                                       | Demonstrates virtually no control of grammar and punctuation; errors are pervasive and make communication impossible.              |
 
 The question is: 
-"Some people believe that social media sites, such as Facebook or Twitter, have a negative impact on young people and their ability to form personal relationships. Others believe that these sites bring people together in a beneficial way."
+"Many countries are experiencing serious problems with their environment, with pollution of their land, water and air.
 
-Assess the essay in the following format. 
+What are these problems and how might they be reduced?"
 
-| Areas                          | Band Score | Justification                                                | Examples |
-| ------------------------------ | ---------- | ------------------------------------------------------------ | -------- |
-| Task Achievement               | Band score for Task Achievement            | 5-6 sentences of justification with examples from the answer | 3 -4 Examples of how the answer could be improved.         |
-| Coherence and Cohesion         | Band score for Coherence and Cohesion           | 5-6 sentences of justification with examples from the answer                                                             | 3 -4 Examples of how the answer could be improved.         |
-| Lexical Resource               | Band score for Lexical Resource           | 5-6 sentences of justification with examples from the answer                                                             | 3 -4 Examples of how the answer could be improved.         |
-| Grammatical Range and Accuracy | Band score for Grammatical Range and Accuracy           | 5-6 sentences of justification with examples from the answer                                                             | 3 -4 Examples of how the answer could be improved.         |
+Assess the essay in the following format; provide feedback in EXACTLY this format:
+
+| Areas                          | Band Score                                    | Justification                                                | Examples                                           |
+| ------------------------------ | --------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------- |
+| Task Achievement               | Band score for Task Achievement               | 5-6 sentences of justification with examples from the answer | 3 -4 Examples of how the answer could be improved. |
+| Coherence and Cohesion         | Band score for Coherence and Cohesion         | 5-6 sentences of justification with examples from the answer | 3 -4 Examples of how the answer could be improved. |
+| Lexical Resource               | Band score for Lexical Resource               | 5-6 sentences of justification with examples from the answer | 3 -4 Examples of how the answer could be improved. |
+| Grammatical Range and Accuracy | Band score for Grammatical Range and Accuracy | 5-6 sentences of justification with examples from the answer | 3 -4 Examples of how the answer could be improved. |
+| Overall Band Score                               |                                               |                                                              |                                                    |
 
 Ensure you provide the stated number of examples and length of feedback. Ensure you provide specific examples (either with phrases, grammatical structures or topic-specific vocabulary)
 
@@ -36,11 +39,11 @@ After the assessment in markdown format, provide a list of 10 specific examples 
 Answer (delimited by === ):
 
 ===
-People have a mixed opinion about social media sites. such as Facebook and Twitter. Some believe that these sites hinder relationships among youth while some think they bring people together in a good way. I personally think that social media is a good thing since it has drastically improved the way we communicate with others.
+In the modern world, many cities are full of cars, factories and etc., which are running on gas. Hence, a lot of countries are having huge problems with their environment, with polluting their land, water and atmosphere. In this essay, I will examine the impact this has had on many countries and suggest how this problem can be solved.
 
-Most importantly social media sites help us connect with someone who is halfway down the world. We can reach them by a simple audio or video call unlike before when it took days together to communicate to them using letters. They have helped us keep in touch with our beloved ones on a daily basis and even celebrate important occasions together virtually. For example online marriages have become a recent trend nowadays where the bride and the groom marry in a church and they live telecast the whole event in Facebook or Youtube for the people who live far away or who couldn’t make it to the wedding.That way people don’t have to miss out important occasions.Social media has become an integral part of our lives.
+The foremost issue with poisoning surroundings, such as air and water infection with traffic fumes and garbage, thrown in rivers and seas. This could lead to global catastrophe, because the air and water would be full of deadly viruses and garbage, that could result in infecting many people with new lethal diseases. For example, India has the dirtiest river in the world, that is called Gang. Many people wash themselves and drinking the water from the stream, while it is filling up with human and industrial waste, turning into a toxic body of water. The most common illnesses, that people are dying because, are diphtheria and cholera.
 
-Another major reason why people love social media is , it keeps us informed and well educated. News nowadays travels faster through social media than Newspaper or a news channel. Furthermore we can be a part of major protests without leaving the safety of our house through social networking sites. All we have to do is tweet is support of a protest or sign a petition.Many of these sites even have online support groups for people going through major life changes or tragedies.
+A possible solution to this problem is to switch to natural energy use, such as sun energy, electricity and etc. We could remove transport that runs on gas, with electric ones. Also, we can build solar energy producers to produce energy for cities and villages. For instance, in Us there is a lot of cities, that use sun energy panels to generate electricity. But many countries can’t afford this, because they don’t have enough money to buy developed technologies.
 
-In conclusion, social media is a blessing to mankind when used the right way. It keeps us well-connected, well-informed and well-educated. After all we are humans and we thrive by socialising and social media is the way to do it.
+In conclusion, with growth of pollute emitters, our world can turn into the lifeless place. To avoid that, all countries should start reducing the rubbish on the streets, filtering the air and clean the water in rivers and lakes.
 ===
