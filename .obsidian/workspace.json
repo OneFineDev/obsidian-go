@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "patterns/Patterns.md",
+                "file": "Quick ref.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "patterns/Patterns.md"
+                "file": "Quick ref.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "patterns/Patterns.md",
+                "file": "Quick ref.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "patterns/Patterns.md",
+                "file": "Quick ref.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,8 +250,8 @@
   },
   "active": "7748debf5d289415",
   "lastOpenFiles": [
-    "Quick ref.md",
     "patterns/Patterns.md",
+    "Quick ref.md",
     "Pasted image 20240203110502.png",
     "cloud_native_go/Cloud Native.md",
     "tooling/Tooling.md",
