@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quick ref.md",
+                "file": "patterns/Patterns.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick ref.md"
+                "file": "patterns/Patterns.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Quick ref.md",
+                "file": "patterns/Patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick ref.md",
+                "file": "patterns/Patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,9 +250,10 @@
   },
   "active": "7748debf5d289415",
   "lastOpenFiles": [
+    "Quick ref.md",
+    "patterns/Patterns.md",
     "Pasted image 20240203110502.png",
     "cloud_native_go/Cloud Native.md",
-    "Quick ref.md",
     "tooling/Tooling.md",
     "cloud_native_go",
     "Projects/IELTSBooster/Untitled.canvas",
@@ -299,7 +300,6 @@
     "System/Attachments/Pasted image 20230804175601.png",
     "System/Attachments/Pasted image 20230804175024.png",
     "System/Attachments/Pasted image 20230804174741.png",
-    "System/Attachments/Pasted image 20230804174203.png",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
     "_PARA/Projects/Test Project 2/Canvas.canvas"
   ]
