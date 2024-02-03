@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7748debf5d289415",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Quick ref.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cloud_native_go/Cloud Native.md"
+                "file": "Quick ref.md"
               }
             }
           },
@@ -140,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cloud_native_go/Cloud Native.md",
+                "file": "Quick ref.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cloud_native_go/Cloud Native.md",
+                "file": "Quick ref.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,10 +248,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ae5c201a8be5eb66",
+  "active": "7748debf5d289415",
   "lastOpenFiles": [
-    "tooling/Tooling.md",
+    "Pasted image 20240203110502.png",
     "cloud_native_go/Cloud Native.md",
+    "Quick ref.md",
+    "tooling/Tooling.md",
     "cloud_native_go",
     "Projects/IELTSBooster/Untitled.canvas",
     "Projects/IELTSBooster/AI/Part 2 Writing.md",
@@ -274,8 +289,6 @@
     "K8S - Core Concepts.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage/Storage.md",
     "_PARA/Projects/jikhk/jikhk.md",
-    "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_Helm_Course/Helm_Fundamentals.md",
-    "Calendar/Daily/2023-08-28.md",
     "Domain Canvas.canvas",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
     "System/Attachments/Pasted image 20230804201643.png",
