@@ -11,14 +11,11 @@
             "id": "ae5c201a8be5eb66",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas",
-                "viewState": {
-                  "x": -260.5,
-                  "y": 534,
-                  "zoom": 0
-                }
+                "file": "cloud_native_go/Cloud Native.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -117,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas"
+                "file": "cloud_native_go/Cloud Native.md"
               }
             }
           },
@@ -143,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas",
+                "file": "cloud_native_go/Cloud Native.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/IELTSBooster/Untitled.canvas",
+                "file": "cloud_native_go/Cloud Native.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -240,13 +237,15 @@
   },
   "active": "ae5c201a8be5eb66",
   "lastOpenFiles": [
+    "tooling/Tooling.md",
+    "cloud_native_go/Cloud Native.md",
+    "cloud_native_go",
+    "Projects/IELTSBooster/Untitled.canvas",
     "Projects/IELTSBooster/AI/Part 2 Writing.md",
     "databaseDesign",
     "Projects/IELTSBooster/Application Spec Document.md",
     "Projects/IELTSBooster/AI",
-    "Projects/IELTSBooster/Untitled.canvas",
     "top_level_mindmap.canvas",
-    "tooling/Tooling.md",
     "Projects/IELTSBooster",
     "Projects",
     "projectTypes/API/Metrics with expvar.md",
@@ -272,7 +271,6 @@
     "projectTypes/API",
     "projectTypes",
     "languageFeatures",
-    "algorithms",
     "K8S - Core Concepts.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage/Storage.md",
     "_PARA/Projects/jikhk/jikhk.md",

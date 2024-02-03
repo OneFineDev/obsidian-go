@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Cloud Native",
+      "path": "cloud_native_go/Cloud Native.md"
+    },
+    {
+      "basename": "Tooling",
+      "path": "tooling/Tooling.md"
+    },
+    {
       "basename": "Untitled",
       "path": "Projects/IELTSBooster/Untitled.canvas"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "top_level_mindmap",
       "path": "top_level_mindmap.canvas"
-    },
-    {
-      "basename": "Tooling",
-      "path": "tooling/Tooling.md"
     },
     {
       "basename": "Metrics with expvar",
