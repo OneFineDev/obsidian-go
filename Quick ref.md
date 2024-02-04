@@ -52,4 +52,6 @@ n, err := rw.Read(bytes) {
 
 
 # Channels
-
+context.Context for timeouts 
+channels for communicating results 
+select to catch whichever one acts first
