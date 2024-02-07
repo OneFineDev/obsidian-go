@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quick ref.md",
+                "file": "cloud_native_go/Cloud Native.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick ref.md"
+                "file": "cloud_native_go/Cloud Native.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Quick ref.md",
+                "file": "cloud_native_go/Cloud Native.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick ref.md",
+                "file": "cloud_native_go/Cloud Native.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,6 +250,8 @@
   },
   "active": "7748debf5d289415",
   "lastOpenFiles": [
+    "Pasted image 20240207080729.png",
+    "Pasted image 20240207080316.png",
     "patterns/Patterns.md",
     "Quick ref.md",
     "Pasted image 20240203110502.png",
@@ -289,7 +291,6 @@
     "languageFeatures",
     "K8S - Core Concepts.md",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Udemy_CKA_Course/Storage/Storage.md",
-    "_PARA/Projects/jikhk/jikhk.md",
     "Domain Canvas.canvas",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/DevOps_Canvas.canvas",
     "System/Attachments/Pasted image 20230804201643.png",
@@ -299,7 +300,6 @@
     "System/Attachments/Pasted image 20230804200328.png",
     "System/Attachments/Pasted image 20230804175601.png",
     "System/Attachments/Pasted image 20230804175024.png",
-    "System/Attachments/Pasted image 20230804174741.png",
     "_PARA/Domain-Technology/Pillar-DevOps_SRE_PE/Area-Docker_K8S/Resource-Authored/Kubernetes.canvas",
     "_PARA/Projects/Test Project 2/Canvas.canvas"
   ]

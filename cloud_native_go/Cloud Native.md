@@ -15,3 +15,8 @@
 
 - Observability 
 	- Logs, metrics, tracing
+
+# Dependability
+![[Pasted image 20240207080316.png]]
+
+![[Pasted image 20240207080729.png]]
